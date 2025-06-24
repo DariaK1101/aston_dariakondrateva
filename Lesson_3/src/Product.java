@@ -30,7 +30,7 @@ public class Product {
         System.out.println("Цена: " + price);
         System.out.println("Состояние бронирования: " + orderStatus + "\n");
     }
-
+//Создать массив из 5 товаров. 
     public static void main(String[] args) {
         Product product = new Product("Samsung Ultra", "01.04.2024", "Samsung Corp.", "Korea", 5599, true);
         Product[] productsArray = new Product[5];
