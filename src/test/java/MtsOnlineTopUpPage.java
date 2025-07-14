@@ -164,17 +164,16 @@ public class MtsOnlineTopUpPage {
         Assertions.assertTrue(amountText.isDisplayed(), "Сумма не найдена");
         Assertions.assertTrue(payButton.isDisplayed(), "Кнопка с суммой не найдена");
 
-        // Проверка лейблов реквизитов карты
         Assertions.assertTrue(driver.getPageSource().contains("Номер карты"), "Лейбл 'Номер карты' не найден");
         Assertions.assertTrue(driver.getPageSource().contains("Срок действия"), "Лейбл 'Срок действия' не найден");
         Assertions.assertTrue(driver.getPageSource().contains("Имя и фамилия на карте"), "Лейбл 'Имя и фамилия на карте' не найден");
         Assertions.assertTrue(driver.getPageSource().contains("CVC"), "Лейбл 'CVC' не найден");
 
-        // Проверка иконок платёжных систем
+
         List<WebElement> icons = driver.findElements(By.cssSelector("img[src*='visa'], img[src*='mastercard'], img[src*='belkart'], img[src*='maestro']"));
         Assertions.assertFalse(icons.isEmpty(), "Иконки платёжных систем не найдены");
 
-        // Вернуться обратно на основной документ
+    
         driver.switchTo().defaultContent();
     }
 
