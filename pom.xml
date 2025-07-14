@@ -14,7 +14,6 @@
     </properties>
 
     <dependencies>
-        <!-- JUnit -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -22,7 +21,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Selenium -->
+      
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -34,15 +33,12 @@
             <version>4.21.0</version>
         </dependency>
 
-
-        <!-- WebDriverManager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.8.0</version>
         </dependency>
 
-        <!-- SLF4J NOP (to suppress logging warnings) -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-nop</artifactId>
@@ -52,7 +48,7 @@
 
     <build>
         <plugins>
-            <!-- Compiler plugin -->
+            
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
