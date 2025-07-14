@@ -120,7 +120,7 @@ public class MtsOnlineTopUpTest {
         phoneInput.clear();
         phoneInput.sendKeys("297777777");
         sumInput.clear();
-        sumInput.sendKeys("5");
+        sumInput.sendKeys("200");
 
         Assertions.assertTrue(continueButton.isEnabled(),
                 "Кнопка 'Продолжить' не активна!");
